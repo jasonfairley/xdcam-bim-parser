@@ -10,9 +10,9 @@ Note that the XDCAM EX BiM file is an MPEG-7 meta-data file which should properl
 ## How to Use
 `import bim_file_tools as bft`
 
-`bft.process_bim_data(filepath, clip_browser=False)`
+`clip_data = bft.process_bim_data(filepath, clip_browser=False)`
 
-Use `clip_browser=True` to format data as the XDCAM Clip Browser would.
+The resulting `clip_data` is a dictionary of frame numbers with key/value pairs for the camera data of that frame.  Use `clip_browser=True` to format camera data as the XDCAM Clip Browser would.
 
 ## Licenses
 All code is licensed under the [GPL version 3](http://www.gnu.org/licenses/gpl.html)
